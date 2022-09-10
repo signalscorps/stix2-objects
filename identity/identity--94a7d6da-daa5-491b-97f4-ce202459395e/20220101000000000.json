@@ -1,0 +1,17 @@
+{
+    "type": "identity",
+    "spec_version": "2.1",
+    "id": "identity--94a7d6da-daa5-491b-97f4-ce202459395e",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z",
+    "name": "file2stix",
+    "description": "https://github.com/signalscorps/cve2stix/",
+    "identity_class": "organization",
+    "sectors": [
+        "technology"
+    ],
+    "contact_information": "https://www.signalscorps.com/contact/",
+    "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+    ]
+}
