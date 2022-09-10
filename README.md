@@ -5,6 +5,7 @@ This repository holds generic STIX 2.1 Objects that are imported to different Si
 * `extension-definition`
 	* `extension-definition--349c1029-4052-4635-a064-263cb17290ea` (IBAN SCO)
 	* `extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b` (Cryptocurrency SCO)
+	* `extension-definition--6c453e0f-9895-498f-a273-2e2dda473377` (NVD CPEs Property)
 	* `extension-definition--94f4bdb6-7f39-4d0a-b103-f787026963a6` (Sigma Rules)
 	* `extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4` (Credit Card SCO)
 	* `extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af` (MISP Warning Lists Property)
@@ -16,3 +17,8 @@ This repository holds generic STIX 2.1 Objects that are imported to different Si
 	* `identity--acf55024-6bbe-486f-a27a-7967559324f4` (file2stix)
 	* `identity--dd3a1828-2912-4040-a61d-656adfc78ce5` (SIEM Rules)
 	* `identity--df0d17d2-3638-4d7f-bd74-227d4cfd3c01` (Obstracts)
+
+It also holds the schemas for all the `extension-definition` Objects as follows;
+
+* `schemas`
+	* b2b5f2cd-49e6-4091-a0e0-c0bb71543e23
