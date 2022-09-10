@@ -1,0 +1,38 @@
+{
+  "$id": "http://raw.githubusercontent.com/signalscorps/schemas/observables/iban.json",
+  "$schema": "http://json-schema.org/draft/2020-12/schema#",
+  "title": "iban",
+  "description": "The IBAN Object represents properties associated with International Bank Account Numbers (IBANs)",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/cyber-observable-core.json"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The value of this property MUST be `iban`.",
+          "enum": [
+            "iban"
+          ]
+        },
+        "id": {
+          "title": "id",
+          "pattern": "^iban--"
+        },
+        "number": {
+          "type": "string",
+          "description": "Specifies the full IBAN, including 2 digit country code."
+        },
+        "country_code": {
+          "type": "string",
+          "description": "The two digit IBAN Country Code"
+        }
+      }
+    }
+  ],
+  "required": [
+    "number"
+  ]
+}
