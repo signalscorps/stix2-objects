@@ -21,4 +21,12 @@ This repository holds generic STIX 2.1 Objects that are imported to different Si
 It also holds the schemas for all the `extension-definition` Objects as follows;
 
 * `schemas`
-	* b2b5f2cd-49e6-4091-a0e0-c0bb71543e23
+	* `scos`
+		* `credit-card`
+		* `cryptocurrency`
+		* `iban`
+	* `properties`
+		* `cpe`
+		* `cve`
+		* `misp-warning-list`
+		* `sigma-rule`

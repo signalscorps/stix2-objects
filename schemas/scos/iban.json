@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/observables/iban.json",
+  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/iban.json",
   "$schema": "http://json-schema.org/draft/2020-12/schema#",
   "title": "iban",
   "description": "The IBAN Object represents properties associated with International Bank Account Numbers (IBANs)",

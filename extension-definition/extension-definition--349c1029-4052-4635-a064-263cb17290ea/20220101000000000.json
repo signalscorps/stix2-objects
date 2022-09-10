@@ -7,7 +7,7 @@
     "modified": "2022-01-01T00:00:00.000Z",
     "name": "IBAN SCO",
     "description": "This schema creates a new SCO type called iban",
-    "schema": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/observables/iban.json",
+    "schema": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/iban.json",
     "version": "1.0",
     "extension_types": [
         "new-sco"

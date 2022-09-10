@@ -1,0 +1,49 @@
+{
+  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/cryptocurrency.json",
+  "$schema": "http://json-schema.org/draft/2020-12/schema#",
+  "title": "cryptocurrency",
+  "description": "The Cryptocurrency Object represents properties associated with various Cryptocurrencies.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/cyber-observable-core.json"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The value of this property MUST be `cryptocurrency`.",
+          "enum": [
+            "cryptocurrency"
+          ]
+        },
+        "id": {
+          "title": "id",
+          "pattern": "^cryptocurrency--"
+        },
+        "symbol": {
+          "type": "cryptocurrency-ov",
+          "description": "Specifies the type of cryptocurrency by symbol."
+        },
+        "address": {
+          "type": "string",
+          "description": "The full address hash."
+        }
+      }
+    }
+  ],
+  "required": [
+    "symbol",
+    "address"
+  ],
+  "definitions": {
+    "cryptocurrency-ov": {
+      "type": "string",
+      "enum": [
+        "BTC",
+        "XMR",
+        "ETH"
+      ]
+    }
+  }
+}

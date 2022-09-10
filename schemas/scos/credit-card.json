@@ -1,7 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/observables/credit-card.json",
+  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/credit-card.json",
   "$schema": "http://json-schema.org/draft/2020-12/schema#",
-  "title": "iban",
+  "title": "credit-card",
   "description": "The Credit Card Object represents properties associated with Credit Cards.",
   "type": "object",
   "allOf": [
