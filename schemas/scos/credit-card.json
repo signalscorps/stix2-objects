@@ -23,11 +23,13 @@
         },
         "number": {
           "type": "string",
-          "description": "Specifies the full credit card number with no spaces."
+          "description": "Specifies the full credit card number with no spaces.",
+          "example": "5555555555554444"
         },
         "type": {
           "type": "credit-card-ov",
-          "description": "The type of credit card."
+          "description": "The type of credit card.",
+          "example": "mastercard"
         }
       }
     }

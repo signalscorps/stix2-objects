@@ -23,11 +23,13 @@
         },
         "number": {
           "type": "string",
-          "description": "Specifies the full IBAN, including 2 digit country code."
+          "description": "Specifies the full IBAN, including 2 digit country code.",
+          "example": "GB94BARC10201530093459"
         },
         "country_code": {
           "type": "string",
-          "description": "The two digit IBAN Country Code"
+          "description": "The two digit IBAN Country Code",
+          "example": "GB"
         }
       }
     }

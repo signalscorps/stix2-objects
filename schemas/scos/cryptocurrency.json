@@ -23,11 +23,13 @@
         },
         "symbol": {
           "type": "cryptocurrency-ov",
-          "description": "Specifies the type of cryptocurrency by symbol."
+          "description": "Specifies the type of cryptocurrency by symbol.",
+          "example": "BTC"
         },
         "address": {
           "type": "string",
-          "description": "The full address hash."
+          "description": "The full address hash.",
+          "example": "3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5"
         }
       }
     }
