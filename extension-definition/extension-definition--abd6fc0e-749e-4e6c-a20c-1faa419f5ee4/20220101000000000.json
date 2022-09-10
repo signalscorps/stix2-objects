@@ -7,7 +7,7 @@
     "modified": "2022-01-01T00:00:00.000Z",
     "name": "Credit Card SCO",
     "description": "This schema creates a new SCO type called credit-card",
-    "schema": "https://github.com/signalscorps/file2stix",
+    "schema": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/observables/credit-card.json",
     "version": "1.0",
     "extension_types": [
         "new-sco"

@@ -1,0 +1,52 @@
+{
+  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/observables/credit-card.json",
+  "$schema": "http://json-schema.org/draft/2020-12/schema#",
+  "title": "iban",
+  "description": "The Credit Card Object represents properties associated with Credit Cards.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/cyber-observable-core.json"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The value of this property MUST be `credit-card`.",
+          "enum": [
+            "credit-card"
+          ]
+        },
+        "id": {
+          "title": "id",
+          "pattern": "^credit-card--"
+        },
+        "number": {
+          "type": "string",
+          "description": "Specifies the full credit card number with no spaces."
+        },
+        "type": {
+          "type": "credit-card-ov",
+          "description": "The type of credit card."
+        }
+      }
+    }
+  ],
+  "required": [
+    "number"
+  ],
+  "definitions": {
+    "credit-card-ov": {
+      "type": "string",
+      "enum": [
+        "mastercard",
+        "visa",
+        "american-express",
+        "discover",
+        "jcb",
+        "diners",
+        "union-pay"
+      ]
+    }
+  }
+}
