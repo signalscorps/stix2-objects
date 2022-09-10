@@ -1,8 +1,8 @@
 {
-  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/credit-card.json",
+  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/credit-card/schema.json",
   "$schema": "http://json-schema.org/draft/2020-12/schema#",
   "title": "credit-card",
-  "description": "The Credit Card Object represents properties associated with Credit Cards.",
+  "description": "The Credit Card Object represents properties associated with Credit Cards for extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4",
   "type": "object",
   "allOf": [
     {

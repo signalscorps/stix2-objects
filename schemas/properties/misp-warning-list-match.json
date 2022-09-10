@@ -1,0 +1,7 @@
+{
+    "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/properties/misp-warning-list-match.json",
+    "$schema": "http://json-schema.org/draft/2020-12/schema",
+    "title": "Schema for adding Warning List Matches to Objects",
+    "description": "The set of properties that define the match. For extension-definition--6c453e0f-9895-498f-a273-2e2dda473377",
+    "type": "object",
+    "allOf": [

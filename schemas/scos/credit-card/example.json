@@ -1,0 +1,12 @@
+{
+  "type": "credit-card",
+  "spec_version": "2.1",
+  "id": "credit-card--1866d676-bec9-4ed3-ab82-21da9805a944",
+  "type": "mastercard",
+  "number": "5555555555554444",
+  "extensions": {
+    "extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4" : {
+      "extension_type" : "new-sco"
+    }
+  }
+}

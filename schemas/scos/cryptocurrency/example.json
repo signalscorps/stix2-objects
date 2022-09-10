@@ -1,0 +1,12 @@
+{
+  "type": "cryptocurrency",
+  "spec_version": "2.1",
+  "id": "cryptocurrency--025f4bfd-b0ae-4961-b378-657064d94679",
+  "type": "BTC",
+  "address": "3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5",
+  "extensions": {
+    "extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b" : {
+      "extension_type" : "new-sco"
+    }
+  }
+}

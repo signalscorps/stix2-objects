@@ -1,0 +1,12 @@
+{
+  "type": "iban",
+  "spec_version": "2.1",
+  "id": "iban--fcd26e7e-fad4-40c0-b8c9-9b2a715f36e7",
+  "country_code": "GB",
+  "number": "GB94BARC10201530093459",
+  "extensions": {
+    "extension-definition--349c1029-4052-4635-a064-263cb17290ea" : {
+      "extension_type" : "new-sco"
+    }
+  }
+}

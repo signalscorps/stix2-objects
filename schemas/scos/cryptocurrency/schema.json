@@ -1,8 +1,8 @@
 {
-  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/cryptocurrency.json",
+  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/cryptocurrency/schema.json",
   "$schema": "http://json-schema.org/draft/2020-12/schema#",
   "title": "cryptocurrency",
-  "description": "The Cryptocurrency Object represents properties associated with various Cryptocurrencies.",
+  "description": "The Cryptocurrency Object represents properties associated with various Cryptocurrencies for extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b",
   "type": "object",
   "allOf": [
     {

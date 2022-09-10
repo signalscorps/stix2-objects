@@ -1,8 +1,8 @@
 {
-  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/iban.json",
+  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/iban/schema.json",
   "$schema": "http://json-schema.org/draft/2020-12/schema#",
   "title": "iban",
-  "description": "The IBAN Object represents properties associated with International Bank Account Numbers (IBANs)",
+  "description": "The IBAN Object represents properties associated with International Bank Account Numbers (IBANs) for extension-definition--349c1029-4052-4635-a064-263cb17290ea",
   "type": "object",
   "allOf": [
     {
