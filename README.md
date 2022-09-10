@@ -15,6 +15,7 @@ This repository holds generic STIX 2.1 Objects that are imported to different Si
 	* `identity--94a7d6da-daa5-491b-97f4-ce202459395e` (cve2stix)
 	* `identity--a99a2297-3044-4011-9a7e-2ff15e056b65` (Signals Corps)
 	* `identity--acf55024-6bbe-486f-a27a-7967559324f4` (file2stix)
+	* `identity--c2aceda2-0e46-431d-be40-7b4a4e797f81` (Demo identity)
 	* `identity--dd3a1828-2912-4040-a61d-656adfc78ce5` (SIEM Rules)
 	* `identity--df0d17d2-3638-4d7f-bd74-227d4cfd3c01` (Obstracts)
 
@@ -22,11 +23,25 @@ It also holds the schemas for all the `extension-definition` Objects as follows;
 
 * `schemas`
 	* `scos`
-		* `credit-card`
-		* `cryptocurrency`
-		* `iban`
+		* `credit-card` (for `extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4`)
+		* `cryptocurrency` (for `extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b`)
+		* `iban` (for `extension-definition--349c1029-4052-4635-a064-263cb17290ea`)
 	* `properties`
-		* `cpe`
+		* `cpe` (for `extension-definition--6c453e0f-9895-498f-a273-2e2dda473377`)
 		* `cve`
 		* `misp-warning-list`
 		* `sigma-rule`
+
+## Support
+
+[Signals Corps are committed to providing best effort support via Slack](https://join.slack.com/t/signalscorps-public/shared_invite/zt-1exnc12ww-9RKR6aMgO57GmHcl156DAA).
+
+If you notice a bug or have a feature request, [please submit them as issues on Github](https://github.com/signalscorps/cve2stix/issues).
+
+## License
+
+[MIT LICENSE](/LICENSE).
+
+## Useful supporting tools
+
+* [cti-stix2-json-schemas](https://github.com/oasis-open/cti-stix2-json-schemas): OASIS TC Open Repository: Non-normative schemas and examples for STIX 2
