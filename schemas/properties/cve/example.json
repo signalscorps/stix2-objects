@@ -33,12 +33,12 @@
             "extension_type": "property-extension",
 			"cve": {
                 "data_type": "CVE",
-                    "data_format": "MITRE",
-                    "data_version": "4.0",
-                    "CVE_data_meta": {
-                        "ID": "CVE-2022-33678",
-                        "ASSIGNER": "secure@microsoft.com"
-                    },
+                "data_format": "MITRE",
+                "data_version": "4.0",
+                "CVE_data_meta": {
+                    "ID": "CVE-2022-33678",
+                    "ASSIGNER": "secure@microsoft.com"
+                },
                     "problemtype": {
                         "problemtype_data": [
                             {
