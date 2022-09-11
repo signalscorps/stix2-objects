@@ -1,0 +1,157 @@
+{
+    "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/properties/cpe/schema.json",
+    "$schema": "http://json-schema.org/draft/2020-12/schema",
+    "title": "Schema for validating CPE values for the Software SCOs.",
+    "description": "The set of properties that define a full CPE. For extension-definition--6c453e0f-9895-498f-a273-2e2dda473377",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://github.com/oasis-open/cti-stix2-json-schemas/blob/master/schemas/observables/software.json"
+        },
+        {
+            "properties": {
+                "extensions": {
+                    "extension-definition--6c453e0f-9895-498f-a273-2e2dda473377": {
+                        "$ref": "#/$defs/cpe-extension"
+                    },
+                    "required": [
+                        "extension-definition--6c453e0f-9895-498f-a273-2e2dda473377"
+                    ]
+                }
+            }
+        },
+    ],
+    "$defs": {
+        "properties": {
+            "extension_type": {
+                "type": "string",
+                "description": "The value of this property MUST be `property-extension`.",
+                "enum": [
+                    "property-extension"
+                ]
+            },
+            "deprecated": {
+                "type": "boolean",
+                "description": "Defines if the CPE is deprecated.",
+                "example": false
+            },
+            "cpe23Uri": {
+                "type": "string",
+                "description": "A complete CPE URI.",
+                "example": "cpe:2.3:a:rusqlite_project:rusqlite:0.26.0:*:*:*:*:rust:*:*"
+            },
+            "part": {
+                "type": "string",
+                "description": "Product type",
+                "example": "a"
+            },
+            "vendor": {
+                "type": "string",
+                "description": "described or identifies the person or organisation that manufactured or created the product",
+                "example": "rusqlite_project"
+            },
+            "product": {
+                "type": "string",
+                "description": "describes or identifies the most common and recognisable title or name of the product",
+                "example": "rusqlite"
+            },
+            "version": {
+                "type": "string",
+                "description": "vendor-specific alphanumeric strings characterising the particular release version of the product",
+                "example": "0.26.0"
+            },
+            "update": {
+                "type": "string",
+                "description": "vendor-specific alphanumeric strings characterising the particular update, service pack, or point release of the product.",
+                "example": "*"
+            },
+            "edition": {
+                "type": "string",
+                "description": "assigned the logical value ANY (`*`) except where required for backward compatibility with version 2.2 of the CPE specification",
+                "example": "*"
+            },
+            "language": {
+                "type": "string",
+                "description": "valid language tags as defined by [RFC5646]",
+                "example": "*"
+            },
+            "sw_edition": {
+                "type": "string",
+                "description": "characterises how the product is tailored to a particular market or class",
+                "example": "*"
+            },
+            "target_sw": {
+                "type": "string",
+                "description": "characterises the software computing environment within which the product operates.",
+                "example": "rust"
+            },
+            "target_hw": {
+                "type": "string",
+                "description": "characterises the instruction set architecture (e.g., x86) on which the product being described or identified operates",
+                "example": "*"
+            },
+            "other": {
+                "type": "string",
+                "description": "any other general descriptive or identifying information which is vendor- or product-specific and which does not logically fit in any other attribute value",
+                "example": "*"
+            },
+            "lastModifiedDate": {
+                "type": "timestamp",
+                "description": "Datetime in format YYYY-MM-DDTHH:MMZ",
+                "example": "2022-01-03T14:59Z"
+            },
+            "titles": {
+                "type": "array",
+                "description": "",
+                "items": {
+                    "properties": {
+                        "title": {
+                            "type": "string",
+                            "description": "Title of the CPE",
+                            "example": "Rusqlite Project Rusqlite 0.26.0 for Rust"
+                        },
+                        "lang": {
+                            "type": "string",
+                            "description": "Language CPE is available in",
+                            "example": "en_US",
+                        }
+                    }
+                }
+            },
+            "refs": {
+                "type": "array",
+                "description": "",
+                "items": {
+                    "properties": {
+                        "ref": {
+                            "type": "string",
+                            "description": "Reference",
+                            "example": "https://github.com/rusqlite/rusqlite/releases"
+                        },
+                        "type": {
+                            "type": "string",
+                            "description": "Reference type",
+                            "example": "Version"
+                        }
+                    }
+                }
+            },
+            "deprecatedBy": {
+                "type": "array",
+                "description": "Specified list of CPEs that replace this CPE",
+                "items": {
+                    "type": "string",
+                    "example": ["cpe:2.3:a:rusqlite_project:rusqlite:0.26.0:*:*:*:*:*:*:*"]
+                }
+            },
+            "vulnerabilities": {
+                "type": "array",
+                "description": "List of CVEs vulnerable to the CPE",
+                "items": {
+                    "type": "string",
+                    "example": ["CVE-2021-45713","CVE-2021-45714"]
+                }
+            }
+        }
+    }
+}

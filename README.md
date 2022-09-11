@@ -29,8 +29,8 @@ It also holds the schemas for all the `extension-definition` Objects as follows;
 	* `properties`
 		* `cpe` (for `extension-definition--6c453e0f-9895-498f-a273-2e2dda473377`)
 		* `cve`
-		* `misp-warning-list`
-		* `sigma-rule`
+		* `misp-warning-list` (for `extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af`)
+		* `sigma-rule` (for `extension-definition--94f4bdb6-7f39-4d0a-b103-f787026963a6`)
 
 ## Support
 

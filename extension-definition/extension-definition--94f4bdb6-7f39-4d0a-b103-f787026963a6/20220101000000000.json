@@ -7,7 +7,7 @@
     "modified": "2022-01-01T00:00:00.000Z",
     "name": "Sigma Rules",
     "description": "This schema adds Sigma Rules to Indicator SDOs",
-    "schema": "https://github.com/SigmaHQ/sigma",
+    "schema": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/properties/sigma-rule/schema.json",
     "version": "1.0",
     "extension_types": [
         "property-extension"
