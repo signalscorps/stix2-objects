@@ -7,7 +7,7 @@
     "modified": "2022-01-01T00:00:00.000Z",
     "name": "NVD CVEs",
     "description": "This schema adds CVEs to Indicator SDOs",
-    "schema": "https://nvd.nist.gov/",
+    "schema": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/properties/cve/schema.json",
     "version": "1.0",
     "extension_types": [
         "property-extension"

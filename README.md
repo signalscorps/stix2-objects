@@ -8,6 +8,7 @@ This repository holds generic STIX 2.1 Objects that are imported to different Si
 	* `extension-definition--6c453e0f-9895-498f-a273-2e2dda473377` (NVD CPEs Property)
 	* `extension-definition--94f4bdb6-7f39-4d0a-b103-f787026963a6` (Sigma Rules)
 	* `extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4` (Credit Card SCO)
+	* `extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23` (NVD CVE Property)
 	* `extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af` (MISP Warning Lists Property)
 * `identity`
 	* `identity--38e71897-3405-4170-a35c-2f0988d21c35` (Vulmatch)
@@ -28,7 +29,7 @@ It also holds the schemas for all the `extension-definition` Objects as follows;
 		* `iban` (for `extension-definition--349c1029-4052-4635-a064-263cb17290ea`)
 	* `properties`
 		* `cpe` (for `extension-definition--6c453e0f-9895-498f-a273-2e2dda473377`)
-		* `cve`
+		* `cve` (for `extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23`)
 		* `misp-warning-list` (for `extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af`)
 		* `sigma-rule` (for `extension-definition--94f4bdb6-7f39-4d0a-b103-f787026963a6`)
 
