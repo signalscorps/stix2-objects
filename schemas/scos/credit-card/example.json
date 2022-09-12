@@ -4,6 +4,9 @@
   "id": "credit-card--1866d676-bec9-4ed3-ab82-21da9805a944",
   "type": "mastercard",
   "number": "5555555555554444",
+  "object_marking_refs": [
+    "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+  ],
   "extensions": {
     "extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4" : {
       "extension_type" : "new-sco"

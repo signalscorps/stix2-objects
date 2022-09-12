@@ -1,0 +1,51 @@
+{
+    "type": "indicator",
+    "spec_version": "2.1",
+    "id": "indicator--78bc5783-81d9-4d73-ac97-59f6db4f72a8",
+    "created": "2017-02-19T00:00:00.000Z",
+    "modified": "2022-05-12T00:00:00.000Z",
+    "indicator_types": [
+        "malicious-activity"
+    ],
+    "name": "Relevant Anti-Virus Event",
+    "description": "This detection method points out highly relevant Antivirus events",
+    "labels": [
+    	"attack.resource_development",
+    	"attack.t1588"
+    ],
+    "pattern": "[(artifact:payload_bin != 'Crack' AND artifact:payload_bin != 'Keygen' AND artifact:payload_bin != 'anti_ransomware_service.exe' AND artifact:payload_bin != 'cyber-protect-service.exe') AND (artifact:payload_bin LIKE '.WinCred.' OR artifact:payload_bin LIKE 'ASP/Backdoor' OR artifact:payload_bin LIKE 'ASPXSpy' OR artifact:payload_bin LIKE 'Backdoor.ASP' OR artifact:payload_bin LIKE 'Backdoor.JSP' OR artifact:payload_bin LIKE 'Backdoor.PHP' OR artifact:payload_bin LIKE 'COBEACON' OR artifact:payload_bin LIKE 'Chopper' OR artifact:payload_bin LIKE 'Clearlog' OR artifact:payload_bin LIKE 'CobaltStr' OR artifact:payload_bin LIKE 'Cometer' OR artifact:payload_bin LIKE 'DumpCreds' OR artifact:payload_bin LIKE 'Filecoder' OR artifact:payload_bin LIKE 'HTool-' OR artifact:payload_bin LIKE 'Hacktool' OR artifact:payload_bin LIKE 'JSP/Backdoor' OR artifact:payload_bin LIKE 'Keylogger' OR artifact:payload_bin LIKE 'Koadic' OR artifact:payload_bin LIKE 'Korplug' OR artifact:payload_bin LIKE 'MPreter' OR artifact:payload_bin LIKE 'MeteTool' OR artifact:payload_bin LIKE 'Mimikatz' OR artifact:payload_bin LIKE 'PHP/Backdoor' OR artifact:payload_bin LIKE 'PWCrack' OR artifact:payload_bin LIKE 'Packed.Generic.347' OR artifact:payload_bin LIKE 'PlugX' OR artifact:payload_bin LIKE 'Portscan' OR artifact:payload_bin LIKE 'Pwdump' OR artifact:payload_bin LIKE 'Ransom' OR artifact:payload_bin LIKE 'Webshell' OR artifact:payload_bin LIKE 'WmiExec' OR artifact:payload_bin LIKE 'Xscan')]",
+    "pattern_type": "stix",
+    "pattern_version": "2.1",
+    "valid_from": "2017-02-19T00:00:00.000Z",
+    "external_references": [
+        {
+            "url": "https://www.virustotal.com/gui/file/13828b390d5f58b002e808c2c4f02fdd920e236cc8015480fa33b6c1a9300e31"
+        },
+        {
+            "url": "https://www.virustotal.com/gui/file/15b57c1b68cd6ce3c161042e0f3be9f32d78151fe95461eedc59a79fc222c7ed"
+        },
+        {
+            "url": "https://www.virustotal.com/gui/file/5092b2672b4cb87a8dd1c2e6047b487b95995ad8ed5e9fc217f46b8bfb1b8c01"
+        },
+        {
+            "url": "https://github.com/SigmaHQ/sigma/blob/master/rules/windows/builtin/application/win_av_relevant_match.yml"
+        }      
+    ],
+    "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+    ],
+    "extensions": {
+        "extension-definition--604c32d5-20f5-4f93-8547-e490e512f8d0": {
+            "extension_type": "property-extension",
+            "status": "experimental",
+            "license": "MIT",
+            "fields": ["FileName"],
+            "falsepositives": "Some software piracy tools (key generators, cracks) are classified as hack tools",
+            "level": "high",
+            "logsource": {
+   				"product": "windows",
+   				"service": "application"
+   			}
+   		}
+   	}
+}
