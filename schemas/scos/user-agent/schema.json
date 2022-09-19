@@ -1,0 +1,60 @@
+{
+  "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/scos/user-agent/schema.json",
+  "$schema": "http://json-schema.org/draft/2020-12/schema#",
+  "title": "cryptocurrency",
+  "description": "The User Agent object schema for extension-definition--6cea4dc9-9517-44b8-b021-ae82e2f1de43",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/cyber-observable-core.json"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The value of this property MUST be `user-agent`.",
+          "enum": [
+            "user-agent"
+          ]
+        },
+        "id": {
+          "title": "id",
+          "pattern": "^user-agent--"
+        },
+        "string": {
+          "type": "string",
+          "description": "Specifies the full user agent string",
+          "example": "Mozilla/5.0 (Linux; Android 11; Lenovo YT-J706X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+        },
+        "software": {
+          "type": "string",
+          "description": "Name and version of the browser software used.",
+          "example": "Mozilla/5.0"
+        },
+        "system": {
+          "type": "string",
+          "description": "Details of the system in which the browser is running.",
+          "example": "Linux; Android 11; Lenovo YT-J706X"
+        },
+        "platform": {
+          "type": "string",
+          "description": "The platform the browser uses.",
+          "example": "AppleWebKit/537.36"
+        },
+        "browser": {
+          "type": "string",
+          "description": "Browser platform details.",
+          "example": "KHTML, like Gecko"
+        },
+        "browser_enhancements": {
+          "type": "string",
+          "description": "This is used by the browser to indicate specific enhancements that are available directly in the browser or through third parties.",
+          "example": "Chrome/96.0.4664.45 Safari/537.36"
+        }
+      }
+    }
+  ],
+  "required": [
+    "string"
+  ]
+}

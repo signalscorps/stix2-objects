@@ -2,7 +2,7 @@
   "type": "cryptocurrency",
   "spec_version": "2.1",
   "id": "cryptocurrency--025f4bfd-b0ae-4961-b378-657064d94679",
-  "type": "BTC",
+  "symbol": "BTC",
   "address": "3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5",
   "object_marking_refs": [
     "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"

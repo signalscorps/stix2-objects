@@ -8,6 +8,7 @@ This repository holds generic STIX 2.1 Objects that are imported to different Si
 	* `extension-definition--604c32d5-20f5-4f93-8547-e490e512f8d0` (Detection Content Properties)
 	* `extension-definition--6c453e0f-9895-498f-a273-2e2dda473377` (NVD CPEs Property)
 	* `extension-definition--94f4bdb6-7f39-4d0a-b103-f787026963a6` (Sigma Rule Properties)
+	* `extension-definition--6cea4dc9-9517-44b8-b021-ae82e2f1de43` (User Agent SCO)
 	* `extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4` (Credit Card SCO)
 	* `extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23` (NVD CVE Properties)
 	* `extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af` (MISP Warning Lists Properties)
@@ -28,6 +29,7 @@ It also holds the schemas for all the `extension-definition` Objects as follows;
 		* `credit-card` (for `extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4`)
 		* `cryptocurrency` (for `extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b`)
 		* `iban` (for `extension-definition--349c1029-4052-4635-a064-263cb17290ea`)
+		* `user-agent` (for `extension-definition--6cea4dc9-9517-44b8-b021-ae82e2f1de43`)
 	* `properties`
 		* `cpe` (for `extension-definition--6c453e0f-9895-498f-a273-2e2dda473377`)
 		* `cve` (for `extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23`)
