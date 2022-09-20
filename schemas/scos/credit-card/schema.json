@@ -26,7 +26,7 @@
           "description": "Specifies the full credit card number with no spaces.",
           "example": "5555555555554444"
         },
-        "type": {
+        "provider": {
           "type": "credit-card-ov",
           "description": "The type of credit card.",
           "example": "mastercard"
