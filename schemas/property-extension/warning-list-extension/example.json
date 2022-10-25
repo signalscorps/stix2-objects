@@ -1,0 +1,39 @@
+{
+    "type": "indicator",
+    "spec_version": "2.1",
+    "id": "indicator--806f72c1-a071-43d4-868a-064d20991919",
+    "created": "2022-09-10T20:45:36.972124Z",
+    "modified": "2022-09-10T20:45:36.972124Z",
+    "name": "Domain: google.com",
+    "indicator_types": [
+        "unknown"
+    ],
+    "pattern": "[ domain-name:value = 'google.com' ]",
+    "pattern_type": "stix",
+    "pattern_version": "2.1",
+    "valid_from": "2022-09-10T20:45:36.972124Z",
+    "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+    ],
+    "extensions": {
+        "extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af": {
+            "extension_type": "property-extension",
+            "warning_list_match": [
+                {
+                    "list_name": "Top 20 000 websites from Cisco Umbrella",
+                    "list_url": "https://misp.github.io/misp-warninglists/lists/cisco_top20k/list.json",
+                    "list_type": "misp"
+                },
+                {
+                    "list_name": "Top 1000 website from Alexa",
+                    "list_url": "https://misp.github.io/misp-warninglists/lists/alexa/list.json",
+                    "list_type": "misp"
+                },
+                {
+                    "list_name": "My custom warning list match",
+                    "list_type": "custom"
+                }
+            ]
+        }
+    }
+}

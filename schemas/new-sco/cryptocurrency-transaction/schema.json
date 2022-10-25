@@ -1,0 +1,89 @@
+{
+    "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/new-sco/cryptocurrency-transaction/schema.json",
+    "$schema": "http://json-schema.org/draft/2020-12/schema#",
+    "title": "cryptocurrency-transaction",
+    "description": "This extension creates a new SCO that can be used to represent cryptocurrency transactions.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/cyber-observable-core.json"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The value of this property MUST be cryptocurrency-transaction.",
+                    "enum": [
+                        "cryptocurrency-transaction"
+                    ]
+                },
+                "id": {
+                    "title": "id",
+                    "pattern": "^cryptocurrency-transaction--"
+                },
+                "currency_symbol": {
+                    "type": "string",
+                    "description": "Specifies the type of cryptocurrency used in the transaction using cryptocurrency symbol.",
+                    "maxLength": 6
+                },
+                "hash": {
+                    "type": "string",
+                    "description": "The hash of the transaction"
+                },
+                "sender_address": {
+                    "type": "string",
+                    "description": "Specifies the hash of the sender (source) wallet, as a reference to a cryptocurrency-wallet object"
+                },
+                "reciever_addresses": {
+                    "type": "array",
+                    "description": "Specifies the hash(es) of the recipient (destination) wallet(s), as a reference to a cryptocurrency-wallet object",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "amount": {
+                    "type": "number",
+                    "description": "The transaction amount (in the same currency as the cryptocurrency defined in the symbol property)"
+                },
+                "block_id": {
+                    "type": "integer",
+                    "description": "The blockchain ID of the block"
+                },
+                "transaction_fee": {
+                    "type": "string",
+                    "description": "The transaction fee (in the same currency as the cryptocurrency defined in the symbol property)"
+                },
+                "transaction_timestamp": {
+                    "type": "string",
+                    "description": "RFC 3339-formatted timestamp"
+                },
+                "extensions": {
+                    "type": "object",
+                    "properties": {
+                        "extension-definition--bef728e0-53cb-11ed-bdc3-0242ac120002": {
+                            "type": "object",
+                            "properties": {
+                                "extension_type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "new-sco"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "extension_type"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "extension-definition--bef728e0-53cb-11ed-bdc3-0242ac120002"
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "type",
+        "id"
+    ]
+}

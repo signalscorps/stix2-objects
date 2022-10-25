@@ -1,0 +1,58 @@
+{
+    "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/new-sco/cryptocurrency-wallet/schema.json",
+    "$schema": "http://json-schema.org/draft/2020-12/schema#",
+    "title": "cryptocurrency-wallet",
+    "description": "This extension creates a new SCO that can be used to represent cryptocurrency wallets.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/cyber-observable-core.json"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The value of this property MUST be cryptocurrency-wallet.",
+                    "enum": [
+                        "cryptocurrency-wallet"
+                    ]
+                },
+                "id": {
+                    "title": "id",
+                    "pattern": "^cryptocurrency-wallet--"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Specifies the name of the cryptocurrency by name e.g. Bitcoin",
+                    "maxLength": 256
+                },
+                "extensions": {
+                    "type": "object",
+                    "properties": {
+                        "extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b": {
+                            "type": "object",
+                            "properties": {
+                                "extension_type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "new-sco"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "extension_type"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b"
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "type",
+        "id"
+    ]
+}

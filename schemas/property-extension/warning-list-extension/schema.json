@@ -1,0 +1,68 @@
+{
+    "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/property-extension/warning-list-extension/schema.json",
+    "$schema": "http://json-schema.org/draft/2020-12/schema",
+    "title": "warning-list-extension",
+    "description": "This extension extends Indicator SDOs with Warning List (aka whitelist) match information. It assumes whitelists are in MISP Warning List format.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://github.com/oasis-open/cti-stix2-json-schemas/blob/master/schemas/observables/software.json"
+        },
+        {
+            "properties": {
+                "extensions": {
+                    "extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af": {
+                        "extension_type": "property-extension",
+                        "$ref": "#/$defs/warning-list-extension",
+                        "required": [
+                            "extension_type",
+                            "$ref"
+                        ]
+                    },
+                    "required": [
+                        "extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af"
+                    ]
+                }
+            }
+        }
+    ],
+    "$defs": {
+        "warning-list-extension": {
+            "type": "object",
+            "description": "The set of properties that a Vulnerability SDO can use to define NVD CVE lookups.",
+            "properties": {
+                "warning_list_match": {
+                    "type": "array",
+                    "description": "The warning lists in MISP format this pattern matches",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "list_name": {
+                                "type": "string",
+                                "description": "The name of the warning list",
+                                "maxLength": 256
+                            },
+                            "list_url": {
+                                "type": "string",
+                                "description": "The URL of the warning list, if exists",
+                                "format": "uri"
+                            },
+                            "list_type": {
+                                "type": "string",
+                                "description": "If not MISP Warning List, then Custom",
+                                "enum": [
+                                    "misp",
+                                    "custom"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "list_name",
+                            "type"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

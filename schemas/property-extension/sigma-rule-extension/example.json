@@ -1,0 +1,85 @@
+{
+    "type": "indicator",
+    "spec_version": "2.1",
+    "id": "indicator--aec48417-4c2e-43d2-af43-7f4e715c5733",
+    "created": "2018-09-09T00:00:00.000Z",
+    "modified": "2022-05-12T00:00:00.000Z",
+    "indicator_types": [
+        "malicious-activity"
+    ],
+    "name": "Sigma Rule: Test name",
+    "description": "A description",
+    "pattern": "title: Test name\r\nid: aec48417-4c2e-43d2-af43-7f4e715c5733\r\nstatus: test\r\ndescription: A description\r\nauthor: Someone\r\nreferences:\r\n  - https://www.example.com\r\ndate: 2018/09/09\r\nmodified: 2022/05/12\r\nlogsource:\r\n  category: antivirus\r\ndetection:\r\n  selection:\r\n    Signature|contains:\r\n      - 'MeteTool'\r\n      - 'MPreter'\r\n      - 'Meterpreter'\r\n  condition: selection\r\nfields:\r\n  - FileName\r\n  - User\r\nfalsepositives:\r\n  - Unlikely\r\nlevel: critical\r\ntags:\r\n  - attack.execution\r\n  - attack.t1203\r\n  - tlp.green\r\n  - tag1",
+    "pattern_type": "sigma",
+    "valid_from": "2018-09-09T00:00:00.000Z",
+    "external_references": [
+        {
+            "url": "https://www.example.com"
+        },
+        {
+            "url": "https://www.example2.com"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+    ],
+    "extensions": {
+        "extension-definition--94f4bdb6-7f39-4d0a-b103-f787026963a6": {
+            "extension_type": "property-extension",
+            "sigma_rule": {
+                "title": "Test name",
+                "id": "aec48417-4c2e-43d2-af43-7f4e715c5733",
+                "date": "2018/09/09",
+                "modified": "2022/05/12",
+                "related": [
+                    {
+                        "id": "08fbc97d-0a2f-491c-ae21-8ffcfd3174e9",
+                        "type": "obsoletes"
+                    },
+                    {
+                        "id": "929a690e-bef0-4204-a928-ef5e620d6fcc",
+                        "type": "derived"
+                    }
+                ],
+                "status": "test",
+                "description": "A description",
+                "license": "MIT",
+                "author": "Someone",
+                "references": [
+                    "https://www.example.com",
+                    "https://www.example2.com"
+                ],
+                "fields": [
+                    "FileName",
+                    "User"
+                ],
+                "falsepositives": [
+                    "Unlikely"
+                ],
+                "level": "critical",
+                "tags": [
+                    "attack.execution",
+                    "attack.t1203",
+                    "tlp.green",
+                    "tag1"
+                ],
+                "logsource": {
+                    "category": "antivirus",
+                    "product": "",
+                    "service": "",
+                    "definition": ""
+                },
+                "detection": {
+                    "selection": {
+                        "Signature|contains": [
+                            "MeteTool",
+                            "MPreter",
+                            "Meterpreter"
+                        ]
+                    },
+                    "condition": "selection"
+                }
+            }
+        }
+    }
+}           

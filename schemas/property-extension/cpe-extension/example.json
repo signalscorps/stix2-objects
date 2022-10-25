@@ -1,0 +1,68 @@
+{
+    "type": "software",
+    "spec_version": "2.1",
+    "id": "software--83293b54-e11e-4bc0-ae85-54d6ebff52bb",
+    "name": "Rusqlite Project Rusqlite 0.26.0 for Rust",
+    "cpe": "cpe:2.3:a:rusqlite_project:rusqlite:0.26.0:*:*:*:*:rust:*:*",  
+    "version": "0.26.0",
+    "vendor": "rusqlite_project",
+    "languages": ["*"],
+    "revoked": false,
+    "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+    ],
+    "extensions": {
+        "extension-definition--6c453e0f-9895-498f-a273-2e2dda473377": {
+            "extension_type": "property-extension",
+            "nvd_cpe" : {
+                "deprecated": false,
+                "cpe23Uri": "cpe:2.3:a:rusqlite_project:rusqlite:0.26.0:*:*:*:*:rust:*:*",
+                "part": "a",
+                "vendor": "rusqlite_project",
+                "product": "rusqlite",
+                "version": "0.26.0",
+                "update": "*",
+                "edition": "*",
+                "language": "*",
+                "sw_edition": "*",
+                "target_sw": "rust",
+                "target_hw": "*",
+                "other": "*",
+                "lastModifiedDate": "2022-01-03T14:59Z",
+                "titles": [
+                    {
+                        "title": "Rusqlite Project Rusqlite 0.26.0 for Rust",
+                        "lang": "en_US"
+                    }
+                ],
+                "refs": [
+                    {
+                        "ref": "https://github.com/rusqlite/rusqlite/releases",
+                        "type": "Version"
+                    },
+                    {
+                        "ref": "https://github.com/rusqlite/rusqlite",
+                        "type": "Project"
+                    },
+                    {
+                        "ref": "https://crates.io/crates/rusqlite",
+                        "type": "Project"
+                    }
+                ],
+                "deprecatedBy": [
+                    "cpe:2.3:a:rusqlite_project:rusqlite:0.26.0:*:*:*:*:rust:*:*",
+                    "cpe:2.3:a:rusqlite_project:rusqlite:0.26.0:*:*:*:*:rust:*:*"
+                ],
+                "vulnerabilities": [
+                    "CVE-2021-45713",
+                    "CVE-2021-45714",
+                    "CVE-2021-45715",
+                    "CVE-2021-45716",
+                    "CVE-2021-45717",
+                    "CVE-2021-45718",
+                    "CVE-2021-45719"
+                ]
+            }
+        }
+    }
+}

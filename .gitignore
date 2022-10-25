@@ -1,2 +1,8 @@
+## Ignore hidden mac objects
 
 .DS_Store
+
+## Ignore schema gen tutorial
+
+genson/
+*genson-output.json

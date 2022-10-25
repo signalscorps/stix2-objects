@@ -1,0 +1,14 @@
+{
+    "type": "cryptocurrency-wallet",
+    "spec_version": "2.1",
+    "id": "cryptocurrency-wallet--025f4bfd-b0ae-4961-b378-657064d94679",
+    "address": "3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5",
+    "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+    ],
+    "extensions": {
+        "extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b" : {
+            "extension_type" : "new-sco"
+        }
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/new-sco/bank-account/schema.json",
+    "$schema": "http://json-schema.org/draft/2020-12/schema#",
+    "title": "bank-account",
+    "description": "This extension creates a new SCO that can be used to represent bank account details.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/cyber-observable-core.json"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The value of this property MUST be bank-account.",
+                    "enum": [
+                        "bank-account"
+                    ]
+                },
+                "id": {
+                    "title": "id",
+                    "pattern": "^bank-account--"
+                },
+                "bank_name": {
+                    "type": "string",
+                    "description": "Specifies the bank that issued the account",
+                    "maxLength": 256
+                },
+                "bank_country": {
+                    "type": "string",
+                    "description": "Specifies the country of the bank that issued the account as a two digit ISO 3166 code",
+                    "maxLength": 2
+                },
+                "currency": {
+                    "type": "string",
+                    "description": "Specifies the currency of the account as ISO 4217 code",
+                    "maxLength": 3
+                },
+                "holder_name": {
+                    "type": "string",
+                    "description": "Specifies the account holder name",
+                    "maxLength": 256
+                },
+                "iban_number": {
+                    "type": "string",
+                    "description": "Specifies the International Bank Account Number (IBAN) number of the account",
+                    "maxLength": 34
+                },
+                "swift_code": {
+                    "type": "string",
+                    "description": "Society for Worldwide Interbank Financial Telecommunications (SWIFT) code or ISO 9362 Business Identifier Codes (BIC)",
+                    "maxLength": 11
+                },
+                "account_type": {
+                    "type": "string",
+                    "description": "The type of account, either business or personal.",
+                    "enum": [
+                        "business",
+                        "personal"
+                    ]
+                },
+                "extensions": {
+                    "type": "object",
+                    "properties": {
+                        "extension-definition--349c1029-4052-4635-a064-263cb17290ea": {
+                            "type": "object",
+                            "properties": {
+                                "extension_type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "new-sco"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "extension_type"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "extension-definition--349c1029-4052-4635-a064-263cb17290ea"
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "type",
+        "id"
+    ]
+}

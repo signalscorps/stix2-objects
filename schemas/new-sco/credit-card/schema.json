@@ -1,0 +1,107 @@
+{
+    "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/new-sco/credit-card/schema.json",
+    "$schema": "http://json-schema.org/draft/2020-12/schema#",
+    "title": "credit-card",
+    "description": "This extension creates a new SCO that can be used to represent credit cards.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/cyber-observable-core.json"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The value of this property MUST be credit-card.",
+                    "enum": [
+                        "credit-card"
+                    ]
+                },
+                "id": {
+                    "title": "id",
+                    "pattern": "^credit-card--"
+                },
+                "issuer": {
+                    "type": "credit-card-ov",
+                    "description": "The issuer of credit card."
+                },
+                "issuing_bank_name": {
+                    "type": "string",
+                    "description": "Specifies the bank the credit card was issued by",
+                    "maxLength": 256
+                },
+                "issuing_bank_country": {
+                    "type": "string",
+                    "description": "Specifies the country of the bank the credit card was issued by as a two digit ISO 3166 code",
+                    "maxLength": 2
+                },
+                "number": {
+                    "type": "string",
+                    "description": "Specifies the full credit card number with no spaces.",
+                    "maxLength": 256
+                },
+                "cardholder_name": {
+                    "type": "string",
+                    "description": "Specifies the bank the credit card was issued by",
+                    "maxLength": 24
+                },
+                "start_date": {
+                    "type": "string",
+                    "description": "Start date, if applicable in format MM/YY",
+                    "maxLength": 5
+                },
+                "expiry_date": {
+                    "type": "string",
+                    "description": "Expiry date, if applicable in format MM/YY",
+                    "maxLength": 5
+                },
+                "security_code": {
+                    "type": "string",
+                    "description": " Visa’s CVV2, MasterCard’s CVC 2, Discover’s CID, AmEx Card Identification Number",
+                    "maxLength": 4
+                },
+                "extensions": {
+                    "type": "object",
+                    "properties": {
+                        "extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4": {
+                            "type": "object",
+                            "properties": {
+                                "extension_type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "new-sco"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "extension_type"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4"
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "type",
+        "id",
+        "number"
+    ],
+    "definitions": {
+        "credit-card-ov": {
+            "type": "string",
+            "enum": [
+                "mastercard",
+                "visa",
+                "american-express",
+                "discover",
+                "jcb",
+                "diners",
+                "union-pay"
+            ]
+        }
+    }
+}
