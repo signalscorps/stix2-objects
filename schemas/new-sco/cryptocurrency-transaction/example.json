@@ -13,11 +13,11 @@
     "output": [
         {
             "address_ref": "cryptocurrency-wallet--19aHZz6zQzh8VpLEMf7VT1r3VmTTJL96ve",
-            "amount_recieved": 0.80000000
+            "amount_received": 0.80000000
         },
         {
             "address_ref": "cryptocurrency-wallet--37biYvTEcBVMoR1NGkPTGvHUuLTrzcLpiv",
-            "amount_recieved": 0.040000000
+            "amount_received": 0.040000000
         }
     ],
     "block_id": 590001,

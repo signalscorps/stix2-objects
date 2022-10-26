@@ -61,7 +61,7 @@
                                 "type": "string",
                                 "description": "Specifies the hash of the recipient (destination) wallet, as a reference to a cryptocurrency-wallet object"
                             },
-                            "amount_recieved": {
+                            "amount_received": {
                                 "type": "number",
                                 "description": "The amount received by this recipient (in the same currency as the cryptocurrency defined in the symbol property)"
                             }
