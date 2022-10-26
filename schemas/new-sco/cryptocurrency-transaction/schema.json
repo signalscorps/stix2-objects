@@ -30,30 +30,57 @@
                     "type": "string",
                     "description": "The hash of the transaction"
                 },
-                "sender_address": {
-                    "type": "string",
-                    "description": "Specifies the hash of the sender (source) wallet, as a reference to a cryptocurrency-wallet object"
-                },
-                "reciever_addresses": {
+                "input": {
                     "type": "array",
-                    "description": "Specifies the hash(es) of the recipient (destination) wallet(s), as a reference to a cryptocurrency-wallet object",
+                    "description": "One or more input addresses for the transaction",
                     "items": {
-                        "type": "string"
+                        "type": "object",
+                        "properties": {
+                            "address_ref": {
+                                "type": "string",
+                                "description": "Specifies the hash of the sender (source) wallet, as a reference to a cryptocurrency-wallet object"
+                            },
+                            "amount_sent": {
+                                "type": "number",
+                                "description": "The amount sent by this input (in the same currency as the cryptocurrency defined in the symbol property)"
+                            }
+                        },
+                        "required": [
+                            "address_ref",
+                            "amount_sent"
+                        ]
                     }
                 },
-                "amount": {
-                    "type": "number",
-                    "description": "The transaction amount (in the same currency as the cryptocurrency defined in the symbol property)"
+                "output": {
+                    "type": "array",
+                    "description": "One or more output addresses for the transaction",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "address_ref": {
+                                "type": "string",
+                                "description": "Specifies the hash of the recipient (destination) wallet, as a reference to a cryptocurrency-wallet object"
+                            },
+                            "amount_recieved": {
+                                "type": "number",
+                                "description": "The amount received by this recipient (in the same currency as the cryptocurrency defined in the symbol property)"
+                            }
+                        },
+                        "required": [
+                            "address_ref",
+                            "amount_sent"
+                        ]
+                    }
                 },
                 "block_id": {
                     "type": "integer",
                     "description": "The blockchain ID of the block"
                 },
-                "transaction_fee": {
+                "fee": {
                     "type": "string",
                     "description": "The transaction fee (in the same currency as the cryptocurrency defined in the symbol property)"
                 },
-                "transaction_timestamp": {
+                "timestamp": {
                     "type": "string",
                     "description": "RFC 3339-formatted timestamp"
                 },

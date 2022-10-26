@@ -4,15 +4,25 @@
     "id": "cryptocurrency-transaction--71735531-4061-4903-83cc-98911846f9a7",
     "currency_symbol": "BTC",
     "hash": "3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5",
-    "sender_address": "cryptocurrency-wallet--37biYvTEcBVMoR1NGkPTGvHUuLTrzcLpiv",
-    "reciever_addresses": [
-        "cryptocurrency-wallet--19aHZz6zQzh8VpLEMf7VT1r3VmTTJL96ve",
-        "cryptocurrency-wallet--37biYvTEcBVMoR1NGkPTGvHUuLTrzcLpiv"
+    "input": [
+        {
+            "address_ref": "cryptocurrency-wallet--37biYvTEcBVMoR1NGkPTGvHUuLTrzcLpiv",
+            "amount_sent": 0.84000000
+        }
     ],
-    "amount":  0.84000000,
+    "output": [
+        {
+            "address_ref": "cryptocurrency-wallet--19aHZz6zQzh8VpLEMf7VT1r3VmTTJL96ve",
+            "amount_recieved": 0.80000000
+        },
+        {
+            "address_ref": "cryptocurrency-wallet--37biYvTEcBVMoR1NGkPTGvHUuLTrzcLpiv",
+            "amount_recieved": 0.040000000
+        }
+    ],
     "block_id": 590001,
-    "transaction_fee": "0.00000728",
-    "transaction_timestamp": "2022-10-02T15:22:21Z",
+    "fee": "0.00000728",
+    "timestamp": "2022-10-02T15:22:21Z",
     "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
     ],
