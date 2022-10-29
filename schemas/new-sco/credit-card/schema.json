@@ -42,7 +42,7 @@
                 },
                 "cardholder_name": {
                     "type": "string",
-                    "description": "Specifies the bank the credit card was issued by.",
+                    "description": "Specifies the name on the credit card.",
                     "maxLength": 24
                 },
                 "start_date": {
@@ -57,7 +57,7 @@
                 },
                 "security_code": {
                     "type": "number",
-                    "description": " Visa’s CVV2, MasterCard’s CVC 2, Discover’s CID, AmEx Card Identification Number",
+                    "description": "Visa’s CVV2, MasterCard’s CVC 2, Discover’s CID, AmEx Card Identification Number",
                     "maxLength": 4
                 },
                 "extensions": {
