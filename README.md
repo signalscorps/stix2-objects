@@ -22,7 +22,7 @@ This repository holds generic STIX 2.1 Objects that are imported to different Si
 
 This extension creates a new SCO that can be used to represent bank account details.
 
-* [Extension Definiton](/extension-definition/new-sco/bank-account/extension-definition--349c1029-4052-4635-a064-263cb17290ea/)
+* [Extension Definition](/extension-definition/new-sco/bank-account/extension-definition--349c1029-4052-4635-a064-263cb17290ea/)
 * [Schema](/schemas/new-sco/bank-account/schema.json)
 * [Example SCO](/schemas/new-sco/bank-account/example.json)
 
@@ -32,7 +32,7 @@ This extension creates a new SCO that can be used to represent bank account deta
 
 This extension creates a new SCO that can be used to represent credit cards.
 
-* [Extension Definiton](/extension-definition/new-sco/credit-card/extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4/)
+* [Extension Definition](/extension-definition/new-sco/credit-card/extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4/)
 * [Schema](/schemas/new-sco/credit-card/schema.json)
 * [Example SCO](/schemas/new-sco/credit-card/example.json)
 
@@ -42,7 +42,7 @@ This extension creates a new SCO that can be used to represent credit cards.
 
 This extension creates a new SCO that can be used to represent cryptocurrency transactions.
 
-* [Extension Definiton](/extension-definition/new-sco/cryptocurrency-transaction/extension-definition--bef728e0-53cb-11ed-bdc3-0242ac120002/)
+* [Extension Definition](/extension-definition/new-sco/cryptocurrency-transaction/extension-definition--bef728e0-53cb-11ed-bdc3-0242ac120002/)
 * [Schema](/schemas/new-sco/cryptocurrency-transaction/schema.json)
 * [Example SCO](/schemas/new-sco/cryptocurrency-transaction/example.json)
 
@@ -52,7 +52,7 @@ This extension creates a new SCO that can be used to represent cryptocurrency tr
 
 This extension creates a new SCO that can be used to represent cryptocurrency wallets.
 
-* [Extension Definiton](/extension-definition/new-sco/cryptocurrency-wallet/extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b/)
+* [Extension Definition](/extension-definition/new-sco/cryptocurrency-wallet/extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b/)
 * [Schema](/schemas/new-sco/cryptocurrency-wallet/schema.json)
 * [Example SCO](/schemas/new-sco/cryptocurrency-wallet/example.json)
 
@@ -62,7 +62,7 @@ This extension creates a new SCO that can be used to represent cryptocurrency wa
 
 This extension creates a new SCO that can be used to represent user agents used in HTTP request. It is designed to be used when the Network Traffic SCO with HTTP request extension cannot be used due to lack of request information needed for the required properties.
 
-* [Extension Definiton](/extension-definition/new-sco/user-agent/extension-definition--6cea4dc9-9517-44b8-b021-ae82e2f1de43/)
+* [Extension Definition](/extension-definition/new-sco/user-agent/extension-definition--6cea4dc9-9517-44b8-b021-ae82e2f1de43/)
 * [Schema](/schemas/new-sco/user-agent/schema.json)
 * [Example SCO](/schemas/new-sco/user-agent/example.json)
 
@@ -74,7 +74,7 @@ This extension creates a new SCO that can be used to represent user agents used 
 
 This extension extends Software SCOs with NVD CPE fields to support NVD enrichments.
 
-* [Extension Definiton](/extension-definition/property-extension/cpe-extension/extension-definition--6c453e0f-9895-498f-a273-2e2dda473377/)
+* [Extension Definition](/extension-definition/property-extension/cpe-extension/extension-definition--6c453e0f-9895-498f-a273-2e2dda473377/)
 * [Schema](/schemas/property-extension/cpe-extension/schema.json)
 * [Example Software SCO Extension](/schemas/property-extension/cpe-extension/example.json)
 
@@ -84,7 +84,7 @@ This extension extends Software SCOs with NVD CPE fields to support NVD enrichme
 
 This extension extends Vulnerability SDOs with NVD CVE fields to support NVD enrichments.
 
-* [Extension Definiton](/extension-definition/property-extension/cve-extension/extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23/)
+* [Extension Definition](/extension-definition/property-extension/cve-extension/extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23/)
 * [Schema](/schemas/property-extension/cve-extension/schema.json)
 * [Example Vulnerability SDO Extension](/schemas/property-extension/cve-extension/example.json)
 
@@ -94,7 +94,7 @@ This extension extends Vulnerability SDOs with NVD CVE fields to support NVD enr
 
 This extension extends Indicator SDOs with a Sigma Rules broken out into individual properties, instead of being packed as JSON escaped YAML in the pattern field which is not human readable which is very likely to cause encoding and decoding issues.
 
-* [Extension Definiton](/extension-definition/property-extension/sigma-rule-extension/extension-definition--94f4bdb6-7f39-4d0a-b103-f787026963a6/)
+* [Extension Definition](/extension-definition/property-extension/sigma-rule-extension/extension-definition--94f4bdb6-7f39-4d0a-b103-f787026963a6/)
 * [Schema](/schemas/property-extension/sigma-rule-extension/schema.json)
 * [Example Indicator SDO Extension](/schemas/property-extension/sigma-rule-extension/example.json)
 
@@ -104,9 +104,19 @@ This extension extends Indicator SDOs with a Sigma Rules broken out into individ
 
 This extension extends Indicator SDOs with Warning List (aka whitelist) match information. It assumes whitelists are in MISP Warning List format.
 
-* [Extension Definiton](/extension-definition/property-extension/warning-list-extension/extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af/)
+* [Extension Definition](/extension-definition/property-extension/warning-list-extension/extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af/)
 * [Schema](/schemas/property-extension/warning-list-extension/schema.json)
 * [Example Indicator SDO Extension](/schemas/property-extension/warning-list-extension/example.json)
+
+### Vulnerability Pattern Extension
+
+`extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16`
+
+This extension extends Indicator SDOs with the information about which CPEs (referenced in the pattern property) are actually vulnerable.
+
+* [Extension Definition](/extension-definition/property-extension/vulnerability-pattern-extension/extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16/)
+* [Schema](/schemas/property-extension/vulnerability-pattern-extension/schema.json)
+* [Example Indicator SDO Extension](/schemas/property-extension/vulnerability-pattern-extension/example.json)
 
 ## Support
 

@@ -6,3 +6,8 @@
 
 genson/
 *genson-output.json
+
+## Ignore temp word files
+
+*~$*.docx
+*~$*.doc
