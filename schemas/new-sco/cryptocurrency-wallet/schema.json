@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/new-sco/cryptocurrency-wallet/schema.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema#",
-    "title": "cryptocurrency-wallet",
+    "title": "Cryptocurrency Wallet New SCO Extension",
     "description": "This extension creates a new SCO that can be used to represent cryptocurrency wallets.",
     "type": "object",
     "allOf": [

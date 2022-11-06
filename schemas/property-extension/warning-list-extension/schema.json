@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/property-extension/warning-list-extension/schema.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema",
-    "title": "warning-list-extension",
+    "title": "Warning List Property Extension",
     "description": "This extension extends Indicator SDOs with Warning List (aka whitelist) match information. It assumes whitelists are in MISP Warning List format.",
     "type": "object",
     "allOf": [

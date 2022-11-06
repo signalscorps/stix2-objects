@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/new-sco/bank-account/schema.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema#",
-    "title": "bank-account",
+    "title": "Bank Account New SCO Extension",
     "description": "This extension creates a new SCO that can be used to represent bank account details.",
     "type": "object",
     "allOf": [

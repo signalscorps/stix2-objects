@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/property-extension/sigma-rule-extension/schema.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema",
-    "title": "sigma-rule-extension",
+    "title": "Sigma Rule Property Extension",
     "description": "This extension extends Indicator SDOs with a Sigma Rules broken out into individual properties, instead of being packed as JSON escaped YAML in the pattern field which is not human readable which is very likely to cause encoding and decoding issues.",
     "type": "object",
     "allOf": [

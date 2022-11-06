@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/new-sco/user-agent/schema.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema#",
-    "title": "user-agent",
+    "title": "User Agent New SCO Extension",
     "description": "This extension creates a new SCO that can be used to represent user agents used in HTTP request. It is designed to be used when the Network Traffic SCO with HTTP request extension cannot be used due to lack of request information needed for the required properties.",
     "type": "object",
     "allOf": [

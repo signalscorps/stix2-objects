@@ -16,7 +16,7 @@ This repository holds generic STIX 2.1 Objects that are imported to different Si
 
 ## New SCOs
 
-### Bank Account SCO
+### Bank Account New SCO Extension
 
 `extension-definition--349c1029-4052-4635-a064-263cb17290ea`
 
@@ -26,7 +26,7 @@ This extension creates a new SCO that can be used to represent bank account deta
 * [Schema](/schemas/new-sco/bank-account/schema.json)
 * [Example SCO](/schemas/new-sco/bank-account/example.json)
 
-### Credit Card SCO
+### Credit Card New SCO Extension
 
 `extension-definition--abd6fc0e-749e-4e6c-a20c-1faa419f5ee4`
 
@@ -36,7 +36,7 @@ This extension creates a new SCO that can be used to represent credit cards.
 * [Schema](/schemas/new-sco/credit-card/schema.json)
 * [Example SCO](/schemas/new-sco/credit-card/example.json)
 
-### Cryptocurrency Transaction SCO
+### Cryptocurrency Transaction New SCO Extension
 
 `extension-definition--bef728e0-53cb-11ed-bdc3-0242ac120002`
 
@@ -46,7 +46,7 @@ This extension creates a new SCO that can be used to represent cryptocurrency tr
 * [Schema](/schemas/new-sco/cryptocurrency-transaction/schema.json)
 * [Example SCO](/schemas/new-sco/cryptocurrency-transaction/example.json)
 
-### Cryptocurrency Wallet SCO
+### Cryptocurrency Wallet New SCO Extension
 
 `extension-definition--532ae28d-137b-4b89-afb7-9cf9b504191b`
 
@@ -56,7 +56,7 @@ This extension creates a new SCO that can be used to represent cryptocurrency wa
 * [Schema](/schemas/new-sco/cryptocurrency-wallet/schema.json)
 * [Example SCO](/schemas/new-sco/cryptocurrency-wallet/example.json)
 
-### User Agent SCO
+### User Agent New SCO Extension
 
 `extension-definition--6cea4dc9-9517-44b8-b021-ae82e2f1de43`
 
@@ -68,7 +68,7 @@ This extension creates a new SCO that can be used to represent user agents used 
 
 ## Property Extensions
 
-### NVD CPE Enrichment Extension
+### NVD CPE Enrichment Property Extension
 
 `extension-definition--6c453e0f-9895-498f-a273-2e2dda473377`
 
@@ -78,7 +78,7 @@ This extension extends Software SCOs with NVD CPE fields to support NVD enrichme
 * [Schema](/schemas/property-extension/nvd-cpe-extension/schema.json)
 * [Example Software SCO Extension](/schemas/property-extension/nvd-cpe-extension/example.json)
 
-### NVD CVE Enrichment Extension
+### NVD CVE Enrichment Property Extension
 
 `extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23`
 
@@ -88,7 +88,7 @@ This extension extends Vulnerability SDOs with NVD CVE fields to support NVD enr
 * [Schema](/schemas/property-extension/nvd-cve-extension/schema.json)
 * [Example Vulnerability SDO Extension](/schemas/property-extension/nvd-cve-extension/example.json)
 
-### Sigma Rule Extension
+### Sigma Rule Property Extension
 
 `extension-definition--94f4bdb6-7f39-4d0a-b103-f787026963a6`
 
@@ -98,17 +98,7 @@ This extension extends Indicator SDOs with a Sigma Rules broken out into individ
 * [Schema](/schemas/property-extension/sigma-rule-extension/schema.json)
 * [Example Indicator SDO Extension](/schemas/property-extension/sigma-rule-extension/example.json)
 
-### Warning List Extension
-
-`extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af`
-
-This extension extends Indicator SDOs with Warning List (aka whitelist) match information. It assumes whitelists are in MISP Warning List format.
-
-* [Extension Definition](/extension-definition/property-extension/warning-list-extension/extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af/)
-* [Schema](/schemas/property-extension/warning-list-extension/schema.json)
-* [Example Indicator SDO Extension](/schemas/property-extension/warning-list-extension/example.json)
-
-### STIX Pattern Vulnerable Object Identifier Extension
+### STIX Pattern Vulnerable Object Identifier Property Extension
 
 `extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16`
 
@@ -117,6 +107,16 @@ This extension extends Indicator SDOs with the information about which CPEs (ref
 * [Extension Definition](/extension-definition/property-extension/stix-pattern-vulnerable-software-identifier-extension/extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16/)
 * [Schema](/schemas/property-extension/stix-pattern-vulnerable-software-identifier-extension/schema.json)
 * [Example Indicator SDO Extension](/schemas/property-extension/stix-pattern-vulnerable-software-identifier-extension/example.json)
+
+### Warning List Property Extension
+
+`extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af`
+
+This extension extends Indicator SDOs with Warning List (aka whitelist) match information. It assumes whitelists are in MISP Warning List format.
+
+* [Extension Definition](/extension-definition/property-extension/warning-list-extension/extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af/)
+* [Schema](/schemas/property-extension/warning-list-extension/schema.json)
+* [Example Indicator SDO Extension](/schemas/property-extension/warning-list-extension/example.json)
 
 ## Support
 

@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/new-sco/cryptocurrency-transaction/schema.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema#",
-    "title": "cryptocurrency-transaction",
+    "title": "Cryptocurrency Transaction New SCO Extension",
     "description": "This extension creates a new SCO that can be used to represent cryptocurrency transactions.",
     "type": "object",
     "allOf": [

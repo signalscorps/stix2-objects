@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/property-extension/nvd-cpe-extension/schema.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema",
-    "title": "nvd-cpe-extension",
+    "title": "NVD CPE Enrichment Property Extension",
     "description": "This extension extends Software SCOs with NVD CPE fields to support NVD enrichments.",
     "type": "object",
     "allOf": [

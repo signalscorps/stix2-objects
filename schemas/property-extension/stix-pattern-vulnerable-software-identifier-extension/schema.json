@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/property-extension/stix-pattern-vulnerable-software-identifier-extension/schema.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema",
-    "title": "stix-pattern-vulnerable-software-identifier-extension",
+    "title": "STIX Pattern Vulnerable Object Identifier Property Extension",
     "description": "This extension extends Indicator SDOs with the information about which CPEs (referenced in the pattern property) are actually vulnerable.",
     "type": "object",
     "allOf": [

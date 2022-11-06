@@ -5,7 +5,7 @@
     "created_by_ref": "identity--a99a2297-3044-4011-9a7e-2ff15e056b65",
     "created": "2022-01-01T00:00:00.000Z",
     "modified": "2022-01-01T00:00:00.000Z",
-    "name": "Bank Account SCO",
+    "name": "Bank Account New SCO Extension",
     "description": "This extension creates a new SCO that can be used to represent bank account details.",
     "schema": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/new-sco/bank-account/schema.json",
     "version": "1.0",
@@ -14,5 +14,12 @@
     ],
     "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+    ],
+    "external_references": [
+        {
+            "source_name": "stix2-objects",
+            "description": "This object was created using stix2-objects from the Signals Corps.",
+            "url": "https://github.com/signalscorps/stix2-objects"
+        }
     ]
 }
