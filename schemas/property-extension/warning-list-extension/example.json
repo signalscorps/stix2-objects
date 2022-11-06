@@ -18,7 +18,7 @@
     "extensions": {
         "extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af": {
             "extension_type": "property-extension",
-            "warning_list_match": [
+            "warning_list_matches": [
                 {
                     "list_name": "Top 20 000 websites from Cisco Umbrella",
                     "list_url": "https://misp.github.io/misp-warninglists/lists/cisco_top20k/list.json",

@@ -112,7 +112,7 @@ This extension extends Indicator SDOs with the information about which CPEs (ref
 
 `extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af`
 
-This extension extends Indicator SDOs with Warning List (aka whitelist) match information. It assumes whitelists are in MISP Warning List format.
+This extension extends Indicator SDOs with Warning List (aka whitelist) match information.
 
 * [Extension Definition](/extension-definition/property-extension/warning-list-extension/extension-definition--c8ea5ecb-f4a3-45e7-94de-9b9ba05161af/)
 * [Schema](/schemas/property-extension/warning-list-extension/schema.json)
