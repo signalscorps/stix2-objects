@@ -7,7 +7,7 @@
     "version": "0.26.0",
     "vendor": "rusqlite_project",
     "languages": ["*"],
-    "revoked": false,
+    "revoked": true,
     "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
     ],
@@ -15,19 +15,8 @@
         "extension-definition--6c453e0f-9895-498f-a273-2e2dda473377": {
             "extension_type": "property-extension",
             "nvd_cpe" : {
-                "deprecated": false,
+                "deprecated": true,
                 "cpe23Uri": "cpe:2.3:a:rusqlite_project:rusqlite:0.26.0:*:*:*:*:rust:*:*",
-                "part": "a",
-                "vendor": "rusqlite_project",
-                "product": "rusqlite",
-                "version": "0.26.0",
-                "update": "*",
-                "edition": "*",
-                "language": "*",
-                "sw_edition": "*",
-                "target_sw": "rust",
-                "target_hw": "*",
-                "other": "*",
                 "lastModifiedDate": "2022-01-03T14:59Z",
                 "titles": [
                     {

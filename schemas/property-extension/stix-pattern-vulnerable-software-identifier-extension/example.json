@@ -23,8 +23,15 @@
                 "cpe:2.3:o:ruijie:rg-uac_firmware:-:*:*:*:*:*:*:*",
                 "cpe:2.3:h:ruijie:rg-uac:-:*:*:*:*:*:*:*"
             ],
+            "all_cpe23uris_refs": [
+                "software--65aacb87-0921-4f49-9bc6-f9943bf38d5e",
+                "software--0d368d10-5260-4408-a6cb-8d6e099a6fd7"
+            ],
             "vulnerable_cpe23uris": [
                 "cpe:2.3:o:ruijie:rg-uac_firmware:-:*:*:*:*:*:*:*"
+            ],
+            "vulnerable_cpe23uris_refs": [
+                "software--65aacb87-0921-4f49-9bc6-f9943bf38d5e"
             ]
         }
     }

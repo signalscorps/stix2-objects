@@ -68,25 +68,25 @@ This extension creates a new SCO that can be used to represent user agents used 
 
 ## Property Extensions
 
-### CPE Extension
+### NVD CPE Enrichment Extension
 
 `extension-definition--6c453e0f-9895-498f-a273-2e2dda473377`
 
 This extension extends Software SCOs with NVD CPE fields to support NVD enrichments.
 
-* [Extension Definition](/extension-definition/property-extension/cpe-extension/extension-definition--6c453e0f-9895-498f-a273-2e2dda473377/)
-* [Schema](/schemas/property-extension/cpe-extension/schema.json)
-* [Example Software SCO Extension](/schemas/property-extension/cpe-extension/example.json)
+* [Extension Definition](/extension-definition/property-extension/nvd-cpe-extension/extension-definition--6c453e0f-9895-498f-a273-2e2dda473377/)
+* [Schema](/schemas/property-extension/nvd-cpe-extension/schema.json)
+* [Example Software SCO Extension](/schemas/property-extension/nvd-cpe-extension/example.json)
 
-### CVE Extension
+### NVD CVE Enrichment Extension
 
 `extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23`
 
 This extension extends Vulnerability SDOs with NVD CVE fields to support NVD enrichments.
 
-* [Extension Definition](/extension-definition/property-extension/cve-extension/extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23/)
-* [Schema](/schemas/property-extension/cve-extension/schema.json)
-* [Example Vulnerability SDO Extension](/schemas/property-extension/cve-extension/example.json)
+* [Extension Definition](/extension-definition/property-extension/nvd-cve-extension/extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23/)
+* [Schema](/schemas/property-extension/nvd-cve-extension/schema.json)
+* [Example Vulnerability SDO Extension](/schemas/property-extension/nvd-cve-extension/example.json)
 
 ### Sigma Rule Extension
 
@@ -108,15 +108,15 @@ This extension extends Indicator SDOs with Warning List (aka whitelist) match in
 * [Schema](/schemas/property-extension/warning-list-extension/schema.json)
 * [Example Indicator SDO Extension](/schemas/property-extension/warning-list-extension/example.json)
 
-### Vulnerability Pattern Extension
+### STIX Pattern Vulnerable Object Identifier Extension
 
 `extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16`
 
-This extension extends Indicator SDOs with the information about which CPEs (referenced in the pattern property) are actually vulnerable.
+This extension extends Indicator SDOs with the information about which CPEs (referenced in the `pattern` property) are actually vulnerable.
 
-* [Extension Definition](/extension-definition/property-extension/vulnerability-pattern-extension/extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16/)
-* [Schema](/schemas/property-extension/vulnerability-pattern-extension/schema.json)
-* [Example Indicator SDO Extension](/schemas/property-extension/vulnerability-pattern-extension/example.json)
+* [Extension Definition](/extension-definition/property-extension/stix-pattern-vulnerable-software-identifier-extension/extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16/)
+* [Schema](/schemas/property-extension/stix-pattern-vulnerable-software-identifier-extension/schema.json)
+* [Example Indicator SDO Extension](/schemas/property-extension/stix-pattern-vulnerable-software-identifier-extension/example.json)
 
 ## Support
 
