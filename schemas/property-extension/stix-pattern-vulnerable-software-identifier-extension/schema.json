@@ -2,7 +2,7 @@
     "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/property-extension/stix-pattern-vulnerable-software-identifier-extension/schema.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema",
     "title": "STIX Pattern Vulnerable Object Identifier Property Extension",
-    "description": "This extension extends Indicator SDOs with the information about which CPEs (referenced in the pattern property) are actually vulnerable.",
+    "description": "This extension extends Indicator SDOs with the information about which CPEs (referenced in the pattern property) are vulnerable.",
     "type": "object",
     "allOf": [
         {
@@ -33,7 +33,7 @@
             "properties": {
                 "all_cpe23uris": {
                     "type": "array",
-                    "description": "A list of all cpe23uri's in the pattern.",
+                    "description": "Specifies all the CPE 2.3 URI’s referenced in the parent STIX Indicator SDO’s pattern property.",
                     "items": {
                         "type": "string",
                         "pattern": "^cpe:2.3:"
@@ -41,7 +41,7 @@
                 },
                 "all_cpe23uris_refs": {
                     "type": "array",
-                    "description": "A list of all STIX software SCOs for the cpe23uri's in the pattern.",
+                    "description": "Specifies all the STIX SCO’s (Software) for each CPE 2.3 URI referenced in the parent STIX Indicator SDO’s pattern property.",
                     "items": {
                         "type": "string",
                         "pattern": "^software--"
@@ -49,7 +49,7 @@
                 },
                 "vulnerable_cpe23uris": {
                     "type": "array",
-                    "description": "A list of only the cpe23uri's that are vulnerable in the pattern",
+                    "description": "Specifies all the CPE 2.3 URI’s references in the parent STIX Indicator SDO’s pattern property that are vulnerable.",
                     "items": {
                         "type": "string",
                         "pattern": "^cpe:2.3:"
@@ -57,7 +57,7 @@
                 },
                 "vulnerable_cpe23uris_refs": {
                     "type": "array",
-                    "description": "A list of all STIX software SCOs for the cpe23uri's that are vulnerable in the pattern",
+                    "description": "Specifies the STIX SCO’s (Software) for each CPE 2.3 URI referenced in the parent STIX Indicator SDO’s pattern property that are vulnerable.",
                     "items": {
                         "type": "string",
                         "pattern": "^software--"

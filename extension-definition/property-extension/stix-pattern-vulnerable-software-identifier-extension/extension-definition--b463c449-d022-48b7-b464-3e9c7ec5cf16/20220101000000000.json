@@ -6,7 +6,7 @@
     "created": "2022-01-01T00:00:00.000Z",
     "modified": "2022-01-01T00:00:00.000Z",
     "name": "STIX Pattern Vulnerable Software Identifier Property Extension",
-    "description": "This extension extends Indicator SDOs with the information about which CPEs (referenced in the pattern property) are actually vulnerable.",
+    "description": "This extension extends Indicator SDOs with the information about which CPEs (referenced in the pattern property) are vulnerable.",
     "schema": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/property-extension/stix-pattern-vulnerable-software-identifier-extension/schema.json",
     "version": "1.0",
     "extension_types": [
