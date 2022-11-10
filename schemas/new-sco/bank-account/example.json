@@ -8,7 +8,6 @@
     "holder_name": "John Smith",
     "iban_number": "GB94BARC10201530093459",
     "swift_code": "BARCGBKAXXX",
-    "account_type": "personal",
     "object_marking_refs": [
         "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
     ],

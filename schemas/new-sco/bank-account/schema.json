@@ -23,41 +23,33 @@
                 },
                 "bank_name": {
                     "type": "string",
-                    "description": "Specifies the bank that issued the account",
+                    "description": "Specifies the bank that issued the account. Example: BARCLAYS BANK PLC",
                     "maxLength": 256
                 },
                 "bank_country": {
                     "type": "string",
-                    "description": "Specifies the country of the bank that issued the account as a two digit ISO 3166 code",
+                    "description": "Specifies the country of the bank that issued the account as a two digit ISO 3166 code. Example: GB",
                     "maxLength": 2
                 },
                 "currency": {
                     "type": "string",
-                    "description": "Specifies the currency of the account as ISO 4217 code",
+                    "description": "Specifies the currency of the account as ISO 4217 code. Example: GBP",
                     "maxLength": 3
                 },
                 "holder_name": {
                     "type": "string",
-                    "description": "Specifies the account holder name",
+                    "description": "Specifies the account holder name. Example: John Smith",
                     "maxLength": 256
                 },
                 "iban_number": {
                     "type": "string",
-                    "description": "Specifies the International Bank Account Number (IBAN) number of the account",
+                    "description": "Specifies the International Bank Account Number (IBAN) number of the account. Example: GB94BARC10201530093459",
                     "maxLength": 34
                 },
                 "swift_code": {
                     "type": "string",
-                    "description": "Society for Worldwide Interbank Financial Telecommunications (SWIFT) code or ISO 9362 Business Identifier Codes (BIC)",
+                    "description": "Specifies the Society for Worldwide Interbank Financial Telecommunications (SWIFT) code or ISO 9362 Business Identifier Codes (BIC). Example: BARCGBKAXXX",
                     "maxLength": 11
-                },
-                "account_type": {
-                    "type": "string",
-                    "description": "The type of account, either business or personal.",
-                    "enum": [
-                        "business",
-                        "personal"
-                    ]
                 },
                 "extensions": {
                     "type": "object",

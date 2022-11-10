@@ -21,9 +21,9 @@
                     "title": "id",
                     "pattern": "^cryptocurrency-wallet--"
                 },
-                "name": {
+                "address": {
                     "type": "string",
-                    "description": "Specifies the name of the cryptocurrency by name e.g. Bitcoin",
+                    "description": "Specifies the hash of the cryptocurrency wallet. Example: 3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5",
                     "maxLength": 256
                 },
                 "extensions": {

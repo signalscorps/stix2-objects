@@ -24,41 +24,41 @@
                 },
                 "number": {
                     "type": "number",
-                    "description": "Specifies the full credit card number with no spaces.",
+                    "description": "Specifies the full credit card number with no spaces. Example: 4242424242424242",
                     "maxLength": 20
                 },
                 "issuer": {
                     "type": "credit-card-ov",
-                    "description": "The issuer of credit card."
+                    "description": "The issuer of credit card. Example: visa"
                 },
                 "issuing_bank_name": {
                     "type": "string",
-                    "description": "Specifies the bank name the credit card was issued by.",
+                    "description": "Specifies the bank name the credit card was issued by. Example: BARCLAYS BANK PLC",
                     "maxLength": 256
                 },
                 "issuing_bank_country": {
                     "type": "string",
-                    "description": "Specifies the country of the bank the credit card was issued by as a two digit ISO 3166 code.",
+                    "description": "Specifies the country of the bank the credit card was issued by as a two digit ISO 3166 code. Example: GB",
                     "maxLength": 2
                 },
                 "cardholder_name": {
                     "type": "string",
-                    "description": "Specifies the name on the credit card.",
+                    "description": "Specifies the name on the credit card. Example: John Smith",
                     "maxLength": 24
                 },
                 "start_date": {
                     "type": "string",
-                    "description": "Start date, if applicable in format MM/YY",
+                    "description": "Start date, if applicable in format MM/YY. Example: 10/22",
                     "maxLength": 5
                 },
                 "expiry_date": {
                     "type": "string",
-                    "description": "Expiry date, if applicable in format MM/YY",
+                    "description": "Expiry date, if applicable in format MM/YY. Example: 10/25",
                     "maxLength": 5
                 },
                 "security_code": {
                     "type": "number",
-                    "description": "Visa’s CVV2, MasterCard’s CVC 2, Discover’s CID, AmEx Card Identification Number",
+                    "description": "Visa’s CVV2, MasterCard’s CVC 2, Discover’s CID, AmEx Card Identification Number. Example: 888",
                     "maxLength": 4
                 },
                 "extensions": {

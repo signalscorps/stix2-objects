@@ -39,17 +39,17 @@
                         "properties": {
                             "list_name": {
                                 "type": "string",
-                                "description": "The name of the warning list. Should be pulled from the name property inside the Warning List file.",
+                                "description": "The name of the warning list. Should be pulled from the name property inside the Warning List file. Example: Top 20 000 websites from Cisco Umbrella",
                                 "maxLength": 256
                             },
                             "list_url": {
                                 "type": "string",
-                                "description": "The URL of the Warning List, if one exists. Usually only used if the Warning List has been identified using a URL.",
+                                "description": "The URL of the Warning List, if one exists. Usually only used if the Warning List has been identified using a URL. Example: https://misp.github.io/misp-warninglists/lists/cisco_top20k/list.json",
                                 "format": "uri"
                             },
                             "list_type": {
                                 "type": "string",
-                                "description": "If a default MISP Warning List the value should be misp, else should be custom",
+                                "description": "If a default MISP Warning List the value should be misp, else should be custom. Example: misp",
                                 "enum": [
                                     "misp",
                                     "custom"

@@ -33,7 +33,7 @@
             "properties": {
                 "cve_ids_refs": {
                     "type": "array",
-                    "description": "Specifies the cve2stix Vulnerability SDOs that contain the CPE referenced in the cpe property of the Software SCO.",
+                    "description": "Specifies the cve2stix Vulnerability SDOs that contain the CPE referenced in the cpe property of the Software SCO. Example: vulnerability--74681a4e-4906-4190-84a7-a36dd2eaf08d",
                     "items": {
                         "type": "string",
                         "pattern": "^vulnerability--"
