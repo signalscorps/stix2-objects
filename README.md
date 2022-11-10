@@ -68,6 +68,27 @@ This extension creates a new SCO that can be used to represent user agents used 
 
 ## Property Extensions
 
+### cpe2stix Enrichment Property Extension
+
+`extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16`
+
+This extension extends Indicator SDOs to support cpe2stix enrichments.
+
+* [Extension Definition](/extension-definition/property-extension/cpe2stix-enrichment-extension/extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16/)
+* [Schema](/schemas/property-extension/cpe2stix-enrichment-extension/schema.json)
+* [Example Indicator SDO Extension](/schemas/property-extension/cpe2stix-enrichment-extension/example.json)
+
+
+### cve2stix Enrichment Property Extension
+
+`extension-definition--fb94b74d-b549-4ebd-8fca-f64ee8958904`
+
+This extension extends Software SCOs to support cve2stix enrichments.
+
+* [Extension Definition](/extension-definition/property-extension/cpe2stix-enrichment-extension/extension-definition--fb94b74d-b549-4ebd-8fca-f64ee8958904/)
+* [Schema](/schemas/property-extension/cve2stix-enrichment-extension/schema.json)
+* [Example Software SCO Extension](/schemas/property-extension/cve2stix-enrichment-extension/example.json)
+
 ### NVD CPE Enrichment Property Extension
 
 `extension-definition--6c453e0f-9895-498f-a273-2e2dda473377`
@@ -97,16 +118,6 @@ This extension extends Indicator SDOs with a Sigma Rules broken out into individ
 * [Extension Definition](/extension-definition/property-extension/sigma-rule-extension/extension-definition--94f4bdb6-7f39-4d0a-b103-f787026963a6/)
 * [Schema](/schemas/property-extension/sigma-rule-extension/schema.json)
 * [Example Indicator SDO Extension](/schemas/property-extension/sigma-rule-extension/example.json)
-
-### STIX Pattern Vulnerable Object Identifier Property Extension
-
-`extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16`
-
-This extension extends Indicator SDOs with the information about which CPEs (referenced in the `pattern` property) are actually vulnerable.
-
-* [Extension Definition](/extension-definition/property-extension/stix-pattern-vulnerable-software-identifier-extension/extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16/)
-* [Schema](/schemas/property-extension/stix-pattern-vulnerable-software-identifier-extension/schema.json)
-* [Example Indicator SDO Extension](/schemas/property-extension/stix-pattern-vulnerable-software-identifier-extension/example.json)
 
 ### Warning List Property Extension
 

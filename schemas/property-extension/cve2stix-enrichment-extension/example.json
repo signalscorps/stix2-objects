@@ -1,0 +1,24 @@
+{
+    "type": "software",
+    "spec_version": "2.1",
+    "id": "software--83293b54-e11e-4bc0-ae85-54d6ebff52bb",
+    "name": "Rusqlite Project Rusqlite 0.26.0 for Rust",
+    "cpe": "cpe:2.3:a:rusqlite_project:rusqlite:0.26.0:*:*:*:*:rust:*:*",  
+    "version": "0.26.0",
+    "vendor": "rusqlite_project",
+    "languages": ["*"],
+    "revoked": false,
+    "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+    ],
+    "extensions": {
+        "extension-definition--fb94b74d-b549-4ebd-8fca-f64ee8958904": {
+            "extension_type": "property-extension",
+            "cve_ids_refs ": [
+                "vulnerability--74681a4e-4906-4190-84a7-a36dd2eaf08d",
+                "vulnerability--33d5006d-74fa-4633-a78e-68de48a6c5a5"
+            ],           
+            }
+        }
+    }
+}
