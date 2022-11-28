@@ -14,9 +14,12 @@
     "extensions": {
         "extension-definition--fb94b74d-b549-4ebd-8fca-f64ee8958904": {
             "extension_type": "property-extension",
-            "cve_ids_refs ": [
+            "all_cve_ids_refs ": [
                 "vulnerability--74681a4e-4906-4190-84a7-a36dd2eaf08d",
                 "vulnerability--33d5006d-74fa-4633-a78e-68de48a6c5a5"
+            ],
+            "vulnerable_cve_ids_refs ": [
+                "vulnerability--74681a4e-4906-4190-84a7-a36dd2eaf08d"
             ]
         }
     }
