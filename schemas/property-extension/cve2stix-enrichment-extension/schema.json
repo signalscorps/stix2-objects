@@ -1,8 +1,8 @@
 {
-    "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/property-extension/cpe2stix-enrichment-extension/schema.json",
+    "$id": "https://raw.githubusercontent.com/signalscorps/stix2-objects/main/schemas/property-extension/cve2stix-enrichment-extension/schema.json",
     "$schema": "http://json-schema.org/draft/2020-12/schema",
-    "title": "cpe2stix Enrichment Property Extension",
-    "description": "This extension extends Indicator SDOs to support cpe2stix enrichments.",
+    "title": "cve2stix Enrichment Property Extension",
+    "description": "This extension extends Indicator SDOs to support cve2stix enrichments.",
     "type": "object",
     "allOf": [
         {
@@ -13,7 +13,7 @@
                 "extensions": {
                     "extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16": {
                         "extension_type": "property-extension",
-                        "$ref": "#/$defs/cpe2stix-enrichment-extension",
+                        "$ref": "#/$defs/cve2stix-enrichment-extension",
                         "required": [
                             "extension_type",
                             "$ref"
@@ -27,7 +27,7 @@
         }
     ],
     "$defs": {
-        "cpe2stix-enrichment-extension": {
+        "cve2stix-enrichment-extension": {
             "type": "object",
             "description": "The set of properties define the vulnerable CPEs in the pattern property.",
             "properties": {
@@ -41,7 +41,7 @@
                 },
                 "all_cpe23uris_refs": {
                     "type": "array",
-                    "description": "Specifies all the cpe2stix STIX SCO’s (Software) for each CPE 2.3 URI referenced in the parent STIX Indicator SDO’s pattern property. Example: software--65aacb87-0921-4f49-9bc6-f9943bf38d5e",
+                    "description": "Specifies all the cve2stix STIX SCO’s (Software) for each CPE 2.3 URI referenced in the parent STIX Indicator SDO’s pattern property. Example: software--65aacb87-0921-4f49-9bc6-f9943bf38d5e",
                     "items": {
                         "type": "string",
                         "pattern": "^software--"
@@ -57,7 +57,7 @@
                 },
                 "vulnerable_cpe23uris_refs": {
                     "type": "array",
-                    "description": "Specifies the cpe2stix STIX SCO’s (Software) for each CPE 2.3 URI referenced in the parent STIX Indicator SDO’s pattern property that are vulnerable. Example: software--65aacb87-0921-4f49-9bc6-f9943bf38d5e",
+                    "description": "Specifies the cve2stix STIX SCO’s (Software) for each CPE 2.3 URI referenced in the parent STIX Indicator SDO’s pattern property that are vulnerable. Example: software--65aacb87-0921-4f49-9bc6-f9943bf38d5e",
                     "items": {
                         "type": "string",
                         "pattern": "^software--"

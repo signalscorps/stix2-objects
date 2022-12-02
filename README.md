@@ -12,7 +12,7 @@ This repository holds generic STIX 2.1 Objects that are imported to different Si
 * [SIEM Rules](/identity/siem-rules/identity--dd3a1828-2912-4040-a61d-656adfc78ce5/20220101000000000.json) (`identity--dd3a1828-2912-4040-a61d-656adfc78ce5`
 * [file2stix](/identity/file2stix/identity--acf55024-6bbe-486f-a27a-7967559324f4/20220101000000000.json) (`identity--acf55024-6bbe-486f-a27a-7967559324f4`
 * [cve2stix](/identity/cve2stix/identity--94a7d6da-daa5-491b-97f4-ce202459395e/20220101000000000.json) (`identity--94a7d6da-daa5-491b-97f4-ce202459395e`
-* [vendor2stix](/identity/cpe2stix/identity--c5f3209c-1022-4c6f-95f0-2c16e530265f/20220101000000000.json) (`identity--c5f3209c-1022-4c6f-95f0-2c16e530265f`)
+* [vendor2stix](/identity/cve2stix/identity--c5f3209c-1022-4c6f-95f0-2c16e530265f/20220101000000000.json) (`identity--c5f3209c-1022-4c6f-95f0-2c16e530265f`)
 
 ## New SCOs
 
@@ -68,15 +68,15 @@ This extension creates a new SCO that can be used to represent user agents used 
 
 ## Property Extensions
 
-### cpe2stix Enrichment Property Extension
+### cve2stix Enrichment Property Extension
 
 `extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16`
 
-This extension extends Indicator SDOs to support cpe2stix enrichments.
+This extension extends Indicator SDOs to support cve2stix enrichments.
 
-* [Extension Definition](/extension-definition/property-extension/cpe2stix-enrichment-extension/extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16/)
-* [Schema](/schemas/property-extension/cpe2stix-enrichment-extension/schema.json)
-* [Example Indicator SDO Extension](/schemas/property-extension/cpe2stix-enrichment-extension/example.json)
+* [Extension Definition](/extension-definition/property-extension/cve2stix-enrichment-extension/extension-definition--b463c449-d022-48b7-b464-3e9c7ec5cf16/)
+* [Schema](/schemas/property-extension/cve2stix-enrichment-extension/schema.json)
+* [Example Indicator SDO Extension](/schemas/property-extension/cve2stix-enrichment-extension/example.json)
 
 ### NVD CVE Enrichment Property Extension
 
