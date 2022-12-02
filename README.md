@@ -12,7 +12,6 @@ This repository holds generic STIX 2.1 Objects that are imported to different Si
 * [SIEM Rules](/identity/siem-rules/identity--dd3a1828-2912-4040-a61d-656adfc78ce5/20220101000000000.json) (`identity--dd3a1828-2912-4040-a61d-656adfc78ce5`
 * [file2stix](/identity/file2stix/identity--acf55024-6bbe-486f-a27a-7967559324f4/20220101000000000.json) (`identity--acf55024-6bbe-486f-a27a-7967559324f4`
 * [cve2stix](/identity/cve2stix/identity--94a7d6da-daa5-491b-97f4-ce202459395e/20220101000000000.json) (`identity--94a7d6da-daa5-491b-97f4-ce202459395e`
-* [cpe2stix](/identity/cpe2stix/identity--eca04b00-3750-4752-9a28-fc3f112a1ff3/20220101000000000.json) (`identity--eca04b00-3750-4752-9a28-fc3f112a1ff3`)
 * [vendor2stix](/identity/cpe2stix/identity--c5f3209c-1022-4c6f-95f0-2c16e530265f/20220101000000000.json) (`identity--c5f3209c-1022-4c6f-95f0-2c16e530265f`)
 
 ## New SCOs
