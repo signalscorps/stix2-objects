@@ -14,10 +14,8 @@
     "valid_from": "2018-09-09T00:00:00.000Z",
     "external_references": [
         {
-            "url": "https://www.example.com"
-        },
-        {
-            "url": "https://www.example2.com"
+            "source_name": "Sigma Rule Reference",
+            "url": "<SIGMA RULE REFERENCES[0]>"
         }
     ],
     "object_marking_refs": [
