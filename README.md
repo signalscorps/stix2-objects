@@ -79,17 +79,6 @@ This extension extends Indicator SDOs to support cpe2stix enrichments.
 * [Schema](/schemas/property-extension/cpe2stix-enrichment-extension/schema.json)
 * [Example Indicator SDO Extension](/schemas/property-extension/cpe2stix-enrichment-extension/example.json)
 
-
-### cve2stix Enrichment Property Extension
-
-`extension-definition--fb94b74d-b549-4ebd-8fca-f64ee8958904`
-
-This extension extends Software SCOs to support cve2stix enrichments.
-
-* [Extension Definition](/extension-definition/property-extension/cpe2stix-enrichment-extension/extension-definition--fb94b74d-b549-4ebd-8fca-f64ee8958904/)
-* [Schema](/schemas/property-extension/cve2stix-enrichment-extension/schema.json)
-* [Example Software SCO Extension](/schemas/property-extension/cve2stix-enrichment-extension/example.json)
-
 ### NVD CVE Enrichment Property Extension
 
 `extension-definition--b2b5f2cd-49e6-4091-a0e0-c0bb71543e23`
