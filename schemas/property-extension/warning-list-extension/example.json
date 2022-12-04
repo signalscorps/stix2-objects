@@ -21,12 +21,10 @@
             "warning_list_matches": [
                 {
                     "list_name": "Top 20 000 websites from Cisco Umbrella",
-                    "list_url": "https://misp.github.io/misp-warninglists/lists/cisco_top20k/list.json",
                     "list_type": "misp"
                 },
                 {
                     "list_name": "Top 1000 website from Alexa",
-                    "list_url": "https://misp.github.io/misp-warninglists/lists/alexa/list.json",
                     "list_type": "misp"
                 },
                 {
